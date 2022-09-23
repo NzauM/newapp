@@ -4,13 +4,13 @@ function Quotes({quoteheading="This quote does not have an heading", quoteparagr
     // const[state, stateSetter] = useState(initialvalue)
     const[username, setUsername] = useState("")
     const[hovered, setHovered] =  useState(false)
-    const[varname, fnChangevarName] = useState('what varname will initially be')
+    // const[varname, fnChangevarName] = useState('what varname will initially be')
 
     // fnChangevarName("new value of varname")
     // console.log(varname)
     // fnChangevarName((varname)=>'new value of varname')
 
-    console.log("Quotes component rendered")
+    // console.log("Quotes component rendered")
 
     
     function handlePriceClick(){
@@ -19,16 +19,16 @@ function Quotes({quoteheading="This quote does not have an heading", quoteparagr
     console.log(hovered)
 
     function changeColor(){
-        console.log("After hover")
+        // console.log("After hover")
         setHovered((hovered)=>!hovered)
     }
 
-    console.log(hovered)
+    // console.log(hovered)
 
 
     function handleSubmit(e){
         let user_input = e.target.value
-        console.log(user_input)
+        // console.log(user_input)
     }
 
     return(
