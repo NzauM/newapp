@@ -15,7 +15,7 @@ function App() {
   const[myKwotes, setKwotes] = useState(myQuotes)
   console.log("App Componet is called once")   
   console.log(myKwotes)
-  let myList = myQuotes.map((elem, ind)=>{
+  let myList = myKwotes.map((elem, ind)=>{
     // console.log(elem)
     // console.log(ind)
     return(
@@ -42,9 +42,11 @@ function App() {
 
   function handleAddQuote(data){
     console.log(data)
-    let all_quotes = myKwotes.push(data)
-    console.log(myKwotes)
+    myKwotes.push(data)
     setKwotes((myKwotes)=>myKwotes)
+    // console.log(myKwotes)
+    // setKwotes((myKwotes)=>[...myKwotes, data])
+    
     console.log("Added quotes")
   }
 
